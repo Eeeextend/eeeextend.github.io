@@ -1,4 +1,15 @@
-Eeeextend的个人博客/n
-极简风格笔记/n
-文章列表-按时间排序/n/n
-2023/11/2 《Wayndroid的基础使用和开发》
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Marked in the browser</title>
+</head>
+<body>
+  <div id="content"></div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    document.getElementById('content').innerHTML =
+      marked.parse('# Marked in the browser\n\nRendered by **marked**.');
+  </script>
+</body>
+</html>
